@@ -1,0 +1,21 @@
+<style>
+    :host {
+    display: block;
+    padding: 5px;
+    }
+
+    .holder {
+    width: 100%;
+    height: 100%;
+    }
+</style>
+
+<span class="holder">
+    <input type="number" (input)="setDataA($event.target.value)">
+
+    <span>+</span>
+
+    <input type="number" (input)="setDataB($event.target.value)">
+
+    <input type="button" value="Calc" (click)="calc()">
+</span>

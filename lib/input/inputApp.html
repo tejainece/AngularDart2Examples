@@ -1,0 +1,17 @@
+<style>
+    :host {
+    display: block;
+    }
+</style>
+
+<span>
+    <span>Name</span>
+    <input (input)="name=$event.target.value">
+</span>
+
+<span>
+    <span>DoB</span>
+    <input type="date" (input)="setDate($event.target.value)">
+</span>
+
+<input-component [name]="name" [date-of-birth]="dateOfBirth"></input-component>
